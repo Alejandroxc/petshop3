@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>PetShop - Tu tienda de mascotas</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Venta de productos de mascotas">
+    <meta name="author" content="Virturo Vidón">
+    {% load static %}
+    {% block css %}
+    {% endblock %}
+    <link rel="icon" href="{%static 'app/img/icon.png' %}">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    <style>
+      .error {
+        color: red;
+        font-weight: bolder;
+      }
+    </style>
+
+</head>
+
+<body>
+    <!--Menú-->
+    <div id="menu-superior"></div>  
+    <!-- Carrusel fotos -->
+    <main role="main">
+        <div class="container">
+          
+          {% block contenido %}
+
+          {% endblock %}
+
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>  
+    </footer>
+    <!-- Scripts -->
+    <script src="js/menu-superior.js" ></script> 
+    <script src="js/footer.js" ></script>
+    
+    {% block js%}
+
+    
+    {% endblock %}
+
+</body>
+</html>

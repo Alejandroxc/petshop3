@@ -1,0 +1,9 @@
+{
+    "editor.minimap.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "files.autoSave": "afterDelay",
+    "python.terminal.activateEnvironment": false,
+    "python.defaultInterpreterPath": "C:\\_Control-3-PGY3121\\010D-28-tabilo-asnizalez.salazar\\petshop3\\Scripts",
+    "editor.tabSize": 2,
+    "editor.mouseWheelZoom": true,
+}
