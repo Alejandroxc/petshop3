@@ -10,3 +10,6 @@ def registro(request):
 
 def ingresar(request):
     return render(request, 'app/ingresar.html')
+
+def menuSuperior(request):
+    return render(request, 'app/menu-superior.html')
