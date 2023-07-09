@@ -9,10 +9,12 @@ class Marca(models.Model):
 
 class Prodcuto(models.Model):
     nombre = models.CharField(max_length=50)
+    disponibilidad = models.BooleanField("stock",null=True)
     precio = models.IntegerField()
-    descripcion = models.models.TextField()
+    descripcion = models.TextField()
     marca = models.ForeignKey(Marca, on_delete=models.PROTECT)
-    fecha = models.models.DateField()
+    fecha = models.DateField()
+    imagen = models.ImageField(upload_to="productos", null=True)
 
     def __str__(self):
         return self.nombre
