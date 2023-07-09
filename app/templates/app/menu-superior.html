@@ -1,48 +1,47 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">
-    <img src="{% static 'app/img/icon.png' %}" alt="" class="logo">
-    PetShop
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<a class="navbar-brand" href="{% url 'index' %}">
+  <img src="{% static 'app/img/icon.png' %}" alt="" class="logo">
+  PetShop
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="ropa.html">¡Concurso!</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'concurso' %}">¡Concurso!</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'ingresar' %}">Ingresar</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Inicio</a>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'administracion' %}">Administración</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'misDatos' %}">Mis datos</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="nosotros.html">Nosotros</a>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'carrito' %}">Carrito</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="registro.html">Registrarse</a>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'misCompras' %}">Mis compras anteriores</a>
       </li>
-      <li class="nav-item">
-          <a class="nav-link" href="ingresar.html">Ingresar</a>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link" href="administracion.html">Administración</a>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'cerrarSesion' %}">Cerrar sesión</a>
       </li>
-      <li class="nav-item">
-          <a class="nav-link" href="misDatos.html">Mis datos</a>
-        </li>
-      <li class="nav-item">
-          <a class="nav-link" href="Carrito.html">Carrito</a>
-        </li>
-      <li class="nav-item">
-          <a class="nav-link" href="miscompras.html">Mis compras anteriores</a>
-        </li>
-      <li class="nav-item">
-          <a class="nav-link" href="cerrarSesion.html">Cerrar sesión</a>
-        </li>
-      
-    </ul>
-  </div>
+    
+  </ul>
+</div>
 </nav>
