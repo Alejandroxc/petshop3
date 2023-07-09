@@ -1,0 +1,88 @@
+{% extends 'app/base.html'%}
+
+{% load static %}
+
+{% block js  %}
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% endblock %}
+
+{% block contenido %}
+
+<h1>Mis compras anteriores</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nro boleta</th>
+      <th>Fecha venta</th>
+      <th>Fecha despacho</th>
+      <th>Fecha entrega</th>
+      <th>Monto total</th>
+      <th>Estado actual</th>
+      <th>Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2022-01-01</td>
+      <td>2022-01-05</td>
+      <td>2022-01-10</td>
+      <td>$120.560</td>
+      <td>Entregado</td>
+      <td><a href="boletaCli.html">Ver detalle</a>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2022-02-01</td>
+      <td>2022-02-05</td>
+      <td>2022-02-10</td>
+      <td>$20.990</td>
+      <td>Despachado</td>
+      <td><a href="#">Ver detalle</a>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-03-01</td>
+      <td>2022-03-05</td>
+      <td>2022-03-10</td>
+      <td>$34.780</td>
+      <td>Vendido</td>
+      <td><a href="#">Ver detalle</a>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2023-03-01</td>
+      <td>2023-03-05</td>
+      <td>2023-03-10</td>
+      <td>$14.080</td>
+      <td>Vendido</td>
+      <td><a href="#">Ver detalle</a>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2023-03-12</td>
+      <td>2023-03-15</td>
+      <td>2023-03-20</td>
+      <td>$12.780</td>
+      <td>Despachado</td>
+      <td><a href="#">Ver detalle</a>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2023-04-02</td>
+      <td>2023-04-06</td>
+      <td>2023-04-10</td>
+      <td>$56.220</td>
+      <td>Entregado</td>
+      <td><a href="#">Ver detalle</a>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+{% endblock %}

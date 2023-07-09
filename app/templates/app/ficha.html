@@ -1,0 +1,55 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Importar scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% endblock %}
+
+{% block contenido %}
+
+<div class="row">
+  <div class="col-md-6">
+      <!-- Imagen del producto -->
+      <img src="{%static 'app/img/petican.jpg'%}" alt="Producto" class="img-fluid">
+  </div>
+  <div class="col-md-6">
+      <!-- Nombre, disponibilidad y precio -->
+      <h1>Petican 25kg - Carne y Cereales - Perro Adulto
+      </h1>
+      <p><strong>Disponibilidad:</strong> En stock</p>
+      <p><strong >Precio:</strong> $26.990</p>
+      <!-- Descripción del producto -->
+      <p>Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+          es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+          importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+          producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+          por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+          mantenerse saludable y en las mejores condiciones físicas.</p>
+      <!-- Stock -->
+      <p><strong>Stock:</strong> 19 unidades disponibles</p>
+      <!-- Botones de acción -->
+      <button type="button" class="btn btn-primary" onclick="window.location.href='ingresar.html'">Comprar ahora</button>
+      <button type="button" class="btn btn-secondary" onclick="window.location.href='ingresar.html'">Agregar al carrito</button>
+  </div>
+</div>
+
+{% endblock %}

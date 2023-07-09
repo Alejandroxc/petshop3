@@ -1,0 +1,83 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% endblock %}
+
+{% block contenido %}
+
+<section class="text-center">
+  <div class="container">
+    <h1 class="mt-4">Nosotros</h1>
+    <p>Somos una tienda especializada en la venta de productos para mascotas. Nuestra misión es ofrecer
+      productos de alta calidad a precios competitivos, garantizando así la satisfacción de nuestros
+      clientes.</p>
+    <p>Contamos con un amplio catálogo de productos para todo tipo de mascotas, desde perros y gatos
+      hasta pájaros y roedores. Además, nuestro personal está altamente capacitado para brindar
+      asesoramiento personalizado a cada uno de nuestros clientes.</p>
+
+    <p>
+    <h2 class="mt-4">Nuestro equipo</h2>
+    </p>
+
+  </div>
+
+</section>
+</div>
+</main>
+<div class="container">
+<div class="text-center">
+<div class="row row-cols-1 row-cols-md-3 g-4 ">
+  <div class="col">
+    <div class="card h-100 thumbnail-card">
+      <div class="text-center">
+        <img src="{% static 'app/img/fs.jpg' %}" class="card-img-top thumbnail-product" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fabián Salazar</h5>
+          <p class="card-text">Gerente general</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Fab.Salazara@PetShop.cl</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 thumbnail-card">
+      <div class="text-center">
+        <img src="{% static 'app/img/vt.jpg' %}" class="card-img-top thumbnail-product" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Valeria Tabilo</h5>
+          <p class="card-text">Encargada de ventas.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Va.Tabilo@PetShop.cl</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 thumbnail-card">
+      <div class="text-center">
+        <img src="{% static 'app/img/yc.jpg' %}" class="card-img-top thumbnail-product" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Yamil Cañizalez</h5>
+          <p class="card-text">Encargado de logística.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Yam.Cañizalez@PetShop.cl </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}

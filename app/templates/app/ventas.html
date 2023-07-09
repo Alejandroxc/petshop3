@@ -1,0 +1,190 @@
+{% extends 'app/base.html'%}
+
+{% load static %}
+
+{% block js  %}
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% endblock %}
+
+{% block contenido %}
+
+<section class="text-center">
+  <p></p>
+  <h1>Historial de ventas</h1>
+  <p></p>
+</section>
+<table class="tabla-contenedor table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nro. Boleta</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Nombre Cliente</th>
+      <th scope="col">Subscrito</th>
+      <th scope="col">Monto Total</th>
+      <th scope="col">Estado Actual</th>
+      <th scope="col">Detalle</th>
+      <th scope="col">Cambiar Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">001</th>
+      <td>2023-03-30</td>
+      <td>Juan Perez</td>
+      <td>Si</td>
+      <td>$70.079</td>
+      <td>Despachado</td>
+      <td><button class="btn btn-primary" onclick="window.location.href='boleta.html'">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option>Vendido</option>
+          <option selected>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">002</th>
+      <td>2023-03-29</td>
+      <td>María González</td>
+      <td>No</td>
+      <td>$5.000</td>
+      <td>Despachado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option>Vendido</option>
+          <option selected>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">003</th>
+      <td>2023-03-28</td>
+      <td>Pedro Torres</td>
+      <td>Si</td>
+      <td>$15.000</td>
+      <td>Entregado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option>Vendido</option>
+          <option>Despachado</option>
+          <option selected>Entregado</option>
+        </select>
+      </td>
+    <tr>
+      <th scope="row">004</th>
+      <td>2023-03-28</td>
+      <td>Edda Menke</td>
+      <td>Si</td>
+      <td>$25.000</td>
+      <td>Anulado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option selected>Anulado</option>
+          <option>Vendido</option>
+          <option>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">005</th>
+      <td>2023-03-27</td>
+      <td>Vicente Fernandez</td>
+      <td>No</td>
+      <td>$13.000</td>
+      <td>Despachado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option>Vendido</option>
+          <option selected>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">006</th>
+      <td>2023-03-27</td>
+      <td>Samantha Rodriguez</td>
+      <td>No</td>
+      <td>$6.500</td>
+      <td>Vendido</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option selected>Vendido</option>
+          <option>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">007</th>
+      <td>2023-03-26</td>
+      <td>María Garcia</td>
+      <td>Si</td>
+      <td>$20.000</td>
+      <td>Anulado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option selected>Anulado</option>
+          <option>Vendido</option>
+          <option>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">008</th>
+      <td>2023-03-26</td>
+      <td>Angelica Zapata</td>
+      <td>No</td>
+      <td>$14.990</td>
+      <td>Despachado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option>Vendido</option>
+          <option selected>Despachado</option>
+          <option>Entregado</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">009</th>
+      <td>2023-03-25</td>
+      <td>Atonieta Zamorano</td>
+      <td>Si</td>
+      <td>$5.000</td>
+      <td>Entregado</td>
+      <td><button class="btn btn-primary">Ver Detalle</button></td>
+      <td>
+        <select class="form-select">
+          <option>Anulado</option>
+          <option>Vendido</option>
+          <option>Despachado</option>
+          <option selected>Entregado</option>
+        </select>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
