@@ -11,3 +11,5 @@ class ProductoAdmin(admin.ModelAdmin):
 
 admin.site.register(Marca)
 admin.site.register(Prodcuto, ProductoAdmin)
+admin.site.register(Usuario)
+admin.site.register(Boleta)
